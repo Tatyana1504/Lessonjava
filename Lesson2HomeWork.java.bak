@@ -1,0 +1,34 @@
+/**
+*java 1. HomeWork 2 
+*
+*@author Tanya Chernavina
+*@version 26.02.2022
+*/
+class Lesson2HomeWork { 
+    public static void main(String[] args) {
+        System.out.println(within10and20(10, -4));
+        System.out.println(within10and20(15, 3));
+        System.out.println(within10and20(20, 8));
+		
+        isPositiveOrNegative(-1);
+        isPositiveOrNegative(0);
+        isPositiveOrNegative(1);
+		
+        System.out.println(isNegative(-1));
+        System.out.println(isNegative(0));
+        System.out.println(isNegative(1));
+		
+    }
+        
+    static boolean within10and20(int a, int b) {
+        return a + b >= 10 && a + b <= 20;
+    }
+	
+	public static void isPositiveOrNegative(int a){
+        System.out.println (a >= 0? "Positive":"Negative");
+    }
+	
+    public static boolean isNegative(int a) {
+        return a < 0;
+    }
+}
