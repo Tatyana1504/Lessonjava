@@ -34,7 +34,7 @@ class Lesson2HomeWork {
         return a < 0;
     }
 	
-    static void printWordNTimes(String word s, int times){
+    static void printWordNTimes(String word s, int times) {
         for (int t = 0; t < times; t++);
         System.out.println(s);
     }
