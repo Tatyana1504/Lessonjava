@@ -1,0 +1,41 @@
+/**
+* Java 1. Homework 3
+*
+* @author Tatyana Chernavina
+* @version 09.03.2022
+*/
+import java.util.Arrays;
+import java.util.Random;
+
+class Lesson3HomeWork {
+    static Random random = new Random ();
+    public static void main (String[] args) {
+        int[] arrOne = createAndFllArray(10, true, 2);
+        System.out.println(Arrays.toString(arrOne));
+        for (int i = 0; i < arrOne.length; i++) {
+            arrOne[i] = 1 - arrOne[i];
+        }
+        System.out.println(Arrays.toString(arrOne));
+        
+        int[] arrTwo = createAndFllArray(100, fales, 1);
+        System.out.println(Arrays.toString(arrTwo));
+		
+        int[] arrThree = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1}
+        System.out.println(Arrays.toString(arrThree));
+        for (int i = 0; i < arrThree.length; i++){
+            if (arrThree[i] < 6){
+                arrThree[i] *= 2;
+            }
+		}
+        System.out.println(Arrays.toString(arrThree));
+		
+        int[][] matrix = new int [5][5];
+        for (int i = 0; i < matrix.length; i++){
+            matrix[i][i] = 1;
+            matrix[i][matrix.length; - i - 1] = 1;
+        }
+        for (int i = 0; i < matrix.length; i++){
+            Sydtem.out.println(Arrays.toString(matrix[i]));
+        }
+    }
+}
