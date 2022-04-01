@@ -1,0 +1,30 @@
+/**
+Java 1. Homework 5
+*
+*@author Tatyana Chernavina
+*@version 01.04.2022
+*/
+
+class Lesson5HomeWork {
+	
+    public static void main(String[] atgs) {
+        Employee[] employees = {
+            new Employee("Ivanov Ivan", "Engineer",
+                "ivanov@mail.com", "2312312", 25000, 25),
+            new Employee("Smirnov Igor", "Lead Engineer",
+                "smirnov@mail.com", "2451722", 45000, 30),
+            new Employee("Gorin Ivan", "Head of Department",
+                "gorin@mail.com", "2314415", 55000, 55),
+            new Employee("Vetrov sergey", "Assistant",
+                "vetrov@mail.com", "2323257", 30000, 42),
+            new Employee("Filatov Nikolay", "Trainee",
+                "filatov@mail.com", "2314256", 15000, 25)
+        };
+		
+        for (Employee employee : employees) {
+		    if (employee.getage() > 40) {
+                System.out.println(employee);
+            }
+        }
+    }
+}
