@@ -1,0 +1,49 @@
+/**
+*Java 1. Homework 6
+*ng
+* @author Tanya Chernavina
+* @version 01.04.2022
+*/
+
+class Lesson6HomeWork {
+	
+    public static void main(String[] args) {
+        Cat cat = new Cat(200);
+        Dog dog = new Dog(500, 10);
+		
+        IAnimal[] animals = {cat, dog};
+        for (IAnimal animal : animals) {
+            System.out.println(animal);
+            System.out.println(animal.run(150));
+            System.out.println(animal.run(250));
+            Sustem.out.println(animal.run(550));
+            System.out.println(animal.swim(5));
+            System.out.println(animal.swim(15));
+        }
+        System.out.println("animal were created: " + Animal.getCountOfAnimals());
+    }
+}
+
+class Dog extends Animal {
+	
+    Dog(int runLimit, int swimLimit) {
+        super(runLimit, swimLimit);
+    }
+}
+class Cat extends Animal {
+	
+    Cat(int runLimit, int swimLimit) {
+        super(runLimit, swimLimit);
+    }
+	
+    Cat(int runLimit) {
+        super(runLimit, -1);
+    }
+
+    @Override
+    public String swim(int distance) {
+        return getClassName() + "can't swim";
+    }
+}	
+
+abstract class 
